@@ -14,9 +14,9 @@
 		<!-- TomEE Embedded Maven Plugin -->
 		<tomee.maven.plugin.version>9.1.1</tomee.maven.plugin.version>
 
-		<igrp.db.user>root</igrp.db.user>
-		<igrp.db.password>Programerfor22</igrp.db.password>
-		<igrp.db.dsn>jdbc:postgresql://localhost:5432/api-generator</igrp.db.dsn>
+		<igrp.db.user>qjsjbhky</igrp.db.user>
+		<igrp.db.password>QWYJjRXSeBQQ9CiabRtZRW9TQ3Al6H9y</igrp.db.password>
+		<igrp.db.dsn>jdbc:postgresql://qjsjbhky:QWYJjRXSeBQQ9CiabRtZRW9TQ3Al6H9y@flora.db.elephantsql.com/qjsjbhky</igrp.db.dsn>
 		<igrp.db.driver>org.postgresql.Driver</igrp.db.driver>
 		<igrp.migration.location>classpath:nosi/core/db/migration/igrp/postgres</igrp.migration.location> <!-- Ex: classpath:nosi/core/db/migration/igrp/postgres  -->
 
