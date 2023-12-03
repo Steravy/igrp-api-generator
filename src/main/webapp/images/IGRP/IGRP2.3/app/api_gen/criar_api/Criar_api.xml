@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/api_gen/criar_api/Criar_api.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Criar_api</page>
+    <app>api_gen</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.api_gen.pages</package_db>
+        <package_html>Criar_api</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=91</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Criar_API</title>
+        <header_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <header_1_text type="text" name="p_header_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p style='text-align: center;'>Criar API</p>
+]]>
+                    </value>
+                </header_1_text>
+            </fields>
+        </header_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome_da_api name="p_nome_da_api" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="Insira o nome da API a criar" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome da API</label>
+                    <value>Doloremque sit perspiciatis mollit sit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome_da_api>
+                <url_base name="p_url_base" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>URL Base</label>
+                    <value>Unde aliqua natus aperiam magna</value>
+                </url_base>
+                <gerar_documentacao name="p_gerar_documentacao" type="checkbox" maxlength="250" required="true" change="false" readonly="false" disabled="false" right="false" java-type="int" tooltip="false" disable_copy_paste="false" switch="false" check="true">
+                    <label>Gerar Documentação</label>
+                    <value>1</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </gerar_documentacao>
+            </fields>
+        </form_1>
+        <separatorlist_1 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <nome_do_metodo name="p_nome_do_metodo" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Nome do Método</label>
+                    <value>Ipsum anim ut dolor sit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome_do_metodo>
+                <tipo_de_retorno name="p_tipo_de_retorno" type="select" multiple="true" tags="false" load_service_data="false" domain="Tipos de Retorno « api_gen" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Tipo de Retorno</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>integer</text>
+                            <value>int</value>
+                        </option>
+                        <option>
+                            <text>char</text>
+                            <value>character</value>
+                        </option>
+                        <option>
+                            <text>string</text>
+                            <value>string</value>
+                        </option>
+                        <option>
+                            <text>floating point</text>
+                            <value>float</value>
+                        </option>
+                        <option>
+                            <text>object</text>
+                            <value>obj</value>
+                        </option>
+                        <option>
+                            <text>void</text>
+                            <value>void</value>
+                        </option>
+                        <option>
+                            <text>boolean</text>
+                            <value>bool</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tipo_de_retorno>
+                <metodo_http name="p_metodo_http" type="select" multiple="true" tags="false" load_service_data="false" domain="métodos « api_gen" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" desc="true">
+                    <label>Método HTTP</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>GET</text>
+                            <value>get</value>
+                        </option>
+                        <option>
+                            <text>POST</text>
+                            <value>post</value>
+                        </option>
+                        <option>
+                            <text>PUT</text>
+                            <value>put</value>
+                        </option>
+                        <option>
+                            <text>DELETE</text>
+                            <value>delete</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </metodo_http>
+                <path name="p_path" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Path</label>
+                    <value>Omnis perspiciatis natus anim deserunt</value>
+                </path>
+                <parametros_de_entrada name="p_parametros_de_entrada" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Parâmetros de Entrada</label>
+                    <value>Lorem mollit sed consectetur sit</value>
+                </parametros_de_entrada>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <nome_do_metodo name="p_nome_do_metodo" desc="true">Labore sit magna elit deserunt</nome_do_metodo>
+                        <nome_do_metodo_desc name="p_nome_do_metodo_desc">Labore sit magna elit deserunt</nome_do_metodo_desc>
+                        <tipo_de_retorno name="p_tipo_de_retorno" desc="true">12</tipo_de_retorno>
+                        <tipo_de_retorno_desc name="p_tipo_de_retorno_desc">12</tipo_de_retorno_desc>
+                        <metodo_http name="p_metodo_http" desc="true">12</metodo_http>
+                        <metodo_http_desc name="p_metodo_http_desc">12</metodo_http_desc>
+                        <path name="p_path" desc="true">Natus officia stract magna consectetur</path>
+                        <path_desc name="p_path_desc">Natus officia stract magna consectetur</path_desc>
+                        <parametros_de_entrada name="p_parametros_de_entrada" desc="true">Deserunt unde aliqua stract mollit</parametros_de_entrada>
+                        <parametros_de_entrada_desc name="p_parametros_de_entrada_desc">Deserunt unde aliqua stract mollit</parametros_de_entrada_desc>
+                    </row>
+                    <row>
+                        <nome_do_metodo name="p_nome_do_metodo" desc="true">Iste perspiciatis natus anim perspiciatis</nome_do_metodo>
+                        <nome_do_metodo_desc name="p_nome_do_metodo_desc">Iste perspiciatis natus anim perspiciatis</nome_do_metodo_desc>
+                        <tipo_de_retorno name="p_tipo_de_retorno" desc="true">12</tipo_de_retorno>
+                        <tipo_de_retorno_desc name="p_tipo_de_retorno_desc">12</tipo_de_retorno_desc>
+                        <metodo_http name="p_metodo_http" desc="true">12</metodo_http>
+                        <metodo_http_desc name="p_metodo_http_desc">12</metodo_http_desc>
+                        <path name="p_path" desc="true">Sit labore magna ipsum omnis</path>
+                        <path_desc name="p_path_desc">Sit labore magna ipsum omnis</path_desc>
+                        <parametros_de_entrada name="p_parametros_de_entrada" desc="true">Sit mollit omnis aliqua labore</parametros_de_entrada>
+                        <parametros_de_entrada_desc name="p_parametros_de_entrada_desc">Sit mollit omnis aliqua labore</parametros_de_entrada_desc>
+                    </row>
+                    <row>
+                        <nome_do_metodo name="p_nome_do_metodo" desc="true">Lorem mollit anim rem accusantium</nome_do_metodo>
+                        <nome_do_metodo_desc name="p_nome_do_metodo_desc">Lorem mollit anim rem accusantium</nome_do_metodo_desc>
+                        <tipo_de_retorno name="p_tipo_de_retorno" desc="true">12</tipo_de_retorno>
+                        <tipo_de_retorno_desc name="p_tipo_de_retorno_desc">12</tipo_de_retorno_desc>
+                        <metodo_http name="p_metodo_http" desc="true">12</metodo_http>
+                        <metodo_http_desc name="p_metodo_http_desc">12</metodo_http_desc>
+                        <path name="p_path" desc="true">Aliqua iste unde sed accusantium</path>
+                        <path_desc name="p_path_desc">Aliqua iste unde sed accusantium</path_desc>
+                        <parametros_de_entrada name="p_parametros_de_entrada" desc="true">Anim unde voluptatem accusantium anim</parametros_de_entrada>
+                        <parametros_de_entrada_desc name="p_parametros_de_entrada_desc">Anim unde voluptatem accusantium anim</parametros_de_entrada_desc>
+                    </row>
+                    <row>
+                        <nome_do_metodo name="p_nome_do_metodo" desc="true">Stract perspiciatis sit natus rem</nome_do_metodo>
+                        <nome_do_metodo_desc name="p_nome_do_metodo_desc">Stract perspiciatis sit natus rem</nome_do_metodo_desc>
+                        <tipo_de_retorno name="p_tipo_de_retorno" desc="true">12</tipo_de_retorno>
+                        <tipo_de_retorno_desc name="p_tipo_de_retorno_desc">12</tipo_de_retorno_desc>
+                        <metodo_http name="p_metodo_http" desc="true">12</metodo_http>
+                        <metodo_http_desc name="p_metodo_http_desc">12</metodo_http_desc>
+                        <path name="p_path" desc="true">Consectetur sit rem laudantium officia</path>
+                        <path_desc name="p_path_desc">Consectetur sit rem laudantium officia</path_desc>
+                        <parametros_de_entrada name="p_parametros_de_entrada" desc="true">Totam officia sit labore accusantium</parametros_de_entrada>
+                        <parametros_de_entrada_desc name="p_parametros_de_entrada_desc">Totam officia sit labore accusantium</parametros_de_entrada_desc>
+                    </row>
+                    <row>
+                        <nome_do_metodo name="p_nome_do_metodo" desc="true">Consectetur sed voluptatem laudantium lorem</nome_do_metodo>
+                        <nome_do_metodo_desc name="p_nome_do_metodo_desc">Consectetur sed voluptatem laudantium lorem</nome_do_metodo_desc>
+                        <tipo_de_retorno name="p_tipo_de_retorno" desc="true">12</tipo_de_retorno>
+                        <tipo_de_retorno_desc name="p_tipo_de_retorno_desc">12</tipo_de_retorno_desc>
+                        <metodo_http name="p_metodo_http" desc="true">12</metodo_http>
+                        <metodo_http_desc name="p_metodo_http_desc">12</metodo_http_desc>
+                        <path name="p_path" desc="true">Natus iste natus omnis labore</path>
+                        <path_desc name="p_path_desc">Natus iste natus omnis labore</path_desc>
+                        <parametros_de_entrada name="p_parametros_de_entrada" desc="true">Anim iste deserunt amet mollit</parametros_de_entrada>
+                        <parametros_de_entrada_desc name="p_parametros_de_entrada_desc">Anim iste deserunt amet mollit</parametros_de_entrada_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="save" refresh_components="">
+                <title>Guardar</title>
+                <app>api_gen</app>
+                <page>Criar_api</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-check</img>
+                <preview>../images/IGRP/IGRP2.3/app/api_gen/criar_api/Criar_api.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
